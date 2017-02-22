@@ -12,7 +12,13 @@ var Main = (props) => {
     <DrawerMenu/>
     <main className="mdl-layout__content">
      <div className="page-content">
-      {props.children}
+      <div className="mdl-grid">
+       <div className="mdl-cell--3-offset mdl-cell mdl-cell--6-col">
+        <div className="demo-card-wide mdl-card mdl-shadow--2dp mdi-card-full" >
+        {props.children}
+          </div>
+         </div>
+        </div>
      </div>
     </main>
    </div>
