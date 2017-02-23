@@ -61,12 +61,13 @@ handleStatusChange : function(newStatus) {
   var renderControlArea = () => {
    if(countdownStatus !== 'stopped') {
     return <Controls countdownStatus={countdownStatus} onStatusChange={this.handleStatusChange}/>
-   }else {
+   } else {
     return <CountdownForm onSetCountDown={this.handleSetCountdown} />
    }
   };
   return (
    <div>
+    <h2 className="page-title">Countdown App</h2>
      <Clock totalSeconds={count}/>
      {renderControlArea()}
      </div>

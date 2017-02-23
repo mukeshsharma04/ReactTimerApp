@@ -28,7 +28,7 @@ var Controls = React.createClass({
 
   return (
    <div className="mdl-card__actions mdl-card--border controls">
-    {renderStartStopButton()}
+    {renderStartStopButton()} &nbsp;&nbsp;
     <button onClick={this.onStatusChange('stopped')}  className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
      Clear
     </button>
