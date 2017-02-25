@@ -19,7 +19,7 @@ var Controls = React.createClass({
     return <button onClick={this.onStatusChange('paused')} className="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
      PAUSE
     </button>
-   }else if (countdownStatus === 'paused') {
+   } else  {
     return <button onClick={this.onStatusChange('started')}  className="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
      START
     </button>
